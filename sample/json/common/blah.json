@@ -1,0 +1,8 @@
+{
+  "thisKeyIsShared": {
+    "value": "somevalue" 
+  },
+  "thisKeyWillBeOverriden": {
+    "value": "willbecomesomevalue"
+  }
+}

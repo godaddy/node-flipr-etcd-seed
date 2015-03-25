@@ -1,0 +1,63 @@
+{
+  "name": "flipr-etcd-seed",
+  "version": "1.0.0",
+  "description": "Upload flipr config from yaml files to Etcd.  Also handles validation.",
+  "main": "index.js",
+  "scripts": {
+    "check-coverage": "istanbul check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
+    "_cover": "istanbul cover --root lib --include-all-sources --report text-summary node_modules/mocha/bin/_mocha",
+    "integration": "npm run _cover -- --dir coverage/integration -- --recursive integration",
+    "lint": "jshint .",
+    "report": "istanbul report html && istanbul report text-summary",
+    "smoke": "mocha --reporter json-stream --recursive integration",
+    "test": "npm run lint  && npm run integration && npm run unit && npm run report",
+    "unit": "npm run _cover -- --dir coverage/unit -- --recursive test"
+  },
+  "bin": {
+    "flipr-etcd-seed": "./bin/flipr-etcd-seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:godaddy/node-flipr.git"
+  },
+  "keywords": [
+    "flipr",
+    "etcd",
+    "feature",
+    "ab",
+    "flags",
+    "configuration",
+    "config",
+    "flip",
+    "flipping"
+  ],
+  "author": {
+    "name": "Grant Shively",
+    "email": "gshively@godaddy.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/godaddy/node-flipr-etcd-seed/issues"
+  },
+  "homepage": "https://github.com/godaddy/node-flipr-etcd-seed",
+  "dependencies": {
+    "async": "^0.9.0",
+    "commander": "^2.7.1",
+    "debug": "^2.1.3",
+    "flipr-validation": "^1.0.0",
+    "glob": "^5.0.3",
+    "js-yaml": "^3.2.7",
+    "lodash": "^3.5.0",
+    "node-etcd": "^4.0.1"
+  },
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "istanbul": "^0.3.7",
+    "jshint": "^2.6.3",
+    "mocha": "^2.2.1",
+    "mocha-istanbul": "^0.2.0",
+    "proxyquire": "^1.4.0",
+    "sinon": "^1.13.0",
+    "sinon-chai": "^2.7.0"
+  }
+}

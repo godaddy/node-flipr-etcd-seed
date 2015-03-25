@@ -1,0 +1,5 @@
+---
+  someKey:
+    value: somevalue
+  thisKeyWillBeOverriden:
+    value: somevalue

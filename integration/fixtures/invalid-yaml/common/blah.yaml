@@ -1,0 +1,5 @@
+---
+  thisKeyIsShared:
+    values: this-should-be-an-array
+  valueMustBeDefined:
+    value: 

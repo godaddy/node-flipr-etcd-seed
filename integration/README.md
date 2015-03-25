@@ -1,0 +1,1 @@
+These are almost full integration tests.  We are only mocking the communication with Etcd, since not all users will have access to an Etcd server when running these tests.
