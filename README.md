@@ -70,3 +70,8 @@ Usage: flipr-etcd-seed [options]
     -p, --port <int>          The port your etcd server is listening on.  Default is 4001.
     -f, --format <type>       Config file format.  Accepts "json" or "yaml".  Defaults to "yaml".
 ```
+
+# Other Stuff
+
+* You can use flipr-etcd-seed programatically.  Check out the [sample section](sample/progamatically.js).
+* We don't support SSL when communicating with Etcd just yet.  We plan to in the future.
