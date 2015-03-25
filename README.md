@@ -3,6 +3,10 @@ node-flipr-etcd-seed
 
 **Stability: 1 - Experimental** 
 
+[![NPM](https://nodei.co/npm/flipr-etcd-seed.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/flipr-etcd-seed/)
+
+[![Build Status](https://travis-ci.org/godaddy/node-flipr-etcd-seed.svg)](https://travis-ci.org/godaddy/node-flipr-etcd-seed)
+
 This project is part of the [flipr family](https://github.com/godaddy/node-flipr).
 
 Validate and upload your flipr configuration to Etcd, to be consumed by [flipr-etcd](https://github.com/godaddy/node-flipr-etcd).  Understands YAML and JSON files.
