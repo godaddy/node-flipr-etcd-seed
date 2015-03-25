@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "check-coverage": "istanbul check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
-    "_cover": "istanbul cover --root lib --include-all-sources --report text-summary node_modules/mocha/bin/_mocha",
-    "integration": "npm run _cover -- --dir coverage/integration -- --recursive integration",
+    "integration": "istanbul cover --root lib --dir coverage/integration --include-all-sources --report text-summary _mocha -- --recursive integration",
     "lint": "jshint .",
     "report": "istanbul report html && istanbul report text-summary",
     "smoke": "mocha --reporter json-stream --recursive integration",
     "test": "npm run lint  && npm run integration && npm run unit && npm run report",
-    "unit": "npm run _cover -- --dir coverage/unit -- --recursive test"
+    "unit": "istanbul cover --root lib --dir coverage/unit --include-all-sources --report text-summary _mocha"
   },
   "bin": {
     "flipr-etcd-seed": "./bin/flipr-etcd-seed"
