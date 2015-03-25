@@ -73,5 +73,5 @@ Usage: flipr-etcd-seed [options]
 
 # Other Stuff
 
-* You can use flipr-etcd-seed programatically.  Check out the [sample section](sample/progamatically.js).
+* You can use flipr-etcd-seed programatically.  Check out the [sample section](sample/programatically.js).
 * We don't support SSL when communicating with Etcd just yet.  We plan to in the future.
