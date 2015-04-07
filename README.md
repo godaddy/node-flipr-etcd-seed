@@ -69,6 +69,7 @@ Usage: flipr-etcd-seed [options]
     -k, --key <name>          The etcd key to save the config under.  Typically the environment you are targetting. Alphanumeric only, no whitespace. Default is "config"
     -p, --port <int>          The port your etcd server is listening on.  Default is 4001.
     -f, --format <type>       Config file format.  Accepts "json" or "yaml".  Defaults to "yaml".
+    -C, --console             Output config to console instead of sending to host.  Defaults to off.
 ```
 
 # Other Stuff
