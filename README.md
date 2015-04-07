@@ -63,10 +63,10 @@ Usage: flipr-etcd-seed [options]
     -h, --help                output usage information
     -V, --version             output the version number
     -c, --config-path <path>  REQUIRED - Path to directory containing config files
-    -d, --directory <name>    RECOMMENDED - The etcd directory to save the config under.  Usually the name of your application.  Alphanumeric only, no whitespace. Default is "default"
+    -d, --directory <name>    RECOMMENDED - The etcd directory to save the config under.  Usually the name of your application.  Alphanumeric, hyphen, and underscore only, no whitespace. Default is "default"
     -h, --host <name>         RECOMMENDED - The ip/domain/hostname of your etcd server.  Default is "127.0.0.1".
-    -e, --environment <name>  RECOMMENDED - The environment you are targetting.  Should match a directory under your config-path.  Default is "default"
-    -k, --key <name>          The etcd key to save the config under.  Typically the environment you are targetting. Alphanumeric only, no whitespace. Default is "config"
+    -e, --environment <name>  RECOMMENDED - The environment you are targetting.  Should match a directory under your config-path. Alphanumeric, hyphen, and underscore only.  Default is "default"
+    -k, --key <name>          The etcd key to save the config under.  Typically the environment you are targetting. Alphanumeric, hyphen, and underscore only, no whitespace. Default is "config"
     -p, --port <int>          The port your etcd server is listening on.  Default is 4001.
     -f, --format <type>       Config file format.  Accepts "json" or "yaml".  Defaults to "yaml".
     -C, --console             Output config to console instead of sending to host.  Defaults to off.
