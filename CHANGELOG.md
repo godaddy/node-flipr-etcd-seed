@@ -1,3 +1,10 @@
+## v1.1.1 (April 7, 2015)
+
+Bug Fixes:
+
+ - Made environment, directory, and key names a little tolerant (hyphens and underscores now allowed)
+ - Fixed some errors in documentation
+
 ## v1.1.0 (April 7, 2015)
 
 Features:
