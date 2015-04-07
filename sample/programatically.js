@@ -9,7 +9,7 @@ var fliprEtcdSeed = require('../flipr-etcd-seed.js');
 fliprEtcdSeed({
   configPath: path.resolve(__dirname, 'yaml'),
   format: 'yaml',
-  host: '10.0.0.200'
+  console: true
 }, function(err, etcdResult){
   if(err) console.error(err);
   console.log(etcdResult);
