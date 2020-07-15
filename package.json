@@ -46,7 +46,7 @@
     "flipr-validation": "^1.0.0",
     "glob": "^5.0.3",
     "js-yaml": "^3.2.7",
-    "lodash": "^3.5.0",
+    "lodash": "^4.17.19",
     "node-etcd": "^4.0.1"
   },
   "devDependencies": {
