@@ -1,3 +1,8 @@
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+**This project is no longer maintained, please contact oss@godaddy.com if you would like to become a maintainer**
+
 node-flipr-etcd-seed
 ====================
 
